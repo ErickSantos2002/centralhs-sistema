@@ -34,9 +34,9 @@ const systems: System[] = [
   },
   {
     id: '5',
-    name: 'Em breve',
-    description: 'Novos sistemas estão sendo desenvolvidos para facilitar ainda mais o seu trabalho. Fique atento às novidades!',
-    url: '#',
+    name: 'GrowthHS',
+    description: 'Sistema de CRM para a equipe comercial da empresa ter controle de seus pipelines e suas vendas.',
+    url: 'https://hsgrowth.healthsafetytech.com',
     icon: logoIcon,
   },
   {
