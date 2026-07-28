@@ -25,14 +25,14 @@ export default function SystemCard({ system }: SystemCardProps) {
       )}
 
       {/* Card */}
-      <div className={`relative h-full backdrop-blur-xl rounded-xl shadow-lg transition-all duration-500 p-4 border flex flex-col ${
+      <div className={`relative h-full backdrop-blur-xl rounded-xl shadow-lg transition-all duration-500 p-3 border flex flex-col ${
         isComingSoon
           ? 'bg-white/30 border-white/30 opacity-50'
           : 'bg-white/80 hover:shadow-2xl hover:-translate-y-2 border-white/50'
       }`}>
 
         {/* Icon Container */}
-        <div className="flex justify-center mb-3">
+        <div className="flex justify-center mb-2">
           <div className="relative">
             {/* Icon Background Glow */}
             {!isComingSoon && (
@@ -40,13 +40,13 @@ export default function SystemCard({ system }: SystemCardProps) {
             )}
 
             {/* Icon */}
-            <div className={`relative w-14 h-14 flex items-center justify-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 rounded-xl transition-all duration-500 shadow-md ${
+            <div className={`relative w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 rounded-xl transition-all duration-500 shadow-md ${
               !isComingSoon ? 'group-hover:scale-110 group-hover:rotate-3' : ''
             }`}>
               <img
                 src={system.icon}
                 alt={`${system.name} logo`}
-                className="w-9 h-9 object-contain filter drop-shadow-sm"
+                className="w-8 h-8 object-contain filter drop-shadow-sm"
               />
             </div>
           </div>
@@ -54,7 +54,7 @@ export default function SystemCard({ system }: SystemCardProps) {
 
         {/* Content */}
         <div className="text-center flex-1 flex flex-col">
-          <h3 className={`text-base font-bold text-gray-800 mb-2 transition-all duration-300 ${
+          <h3 className={`text-base font-bold text-gray-800 mb-1.5 transition-all duration-300 ${
             !isComingSoon ? 'group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text' : ''
           }`}>
             {system.name}
@@ -66,7 +66,7 @@ export default function SystemCard({ system }: SystemCardProps) {
 
         {/* Arrow Icon */}
         {!isComingSoon && (
-          <div className="flex justify-center mt-3 pt-3 border-t border-gray-200/50">
+          <div className="flex justify-center mt-2 pt-2 border-t border-gray-200/50">
             <div className="flex items-center gap-2 text-xs font-medium text-gray-500 group-hover:text-blue-600 transition-colors duration-300">
               <span>Acessar</span>
               <svg
