@@ -2,6 +2,17 @@ import SystemCard from './components/SystemCard';
 import type { System } from './types/system';
 import logoFull from './assets/logo-full.png';
 import logoIcon from './assets/logo-icon.ico';
+import logoDataCoreHS from './assets/sistemas/datacorehs.webp';
+import logoControlHS from './assets/sistemas/controlhs.webp';
+import logoHealthScore from './assets/sistemas/healthscore.webp';
+import logoChamadosHS from './assets/sistemas/chamadoshs.webp';
+import logoGrowthHS from './assets/sistemas/growthhs.webp';
+import logoGestorHS from './assets/sistemas/gestorhs.webp';
+import logoTaskHS from './assets/sistemas/taskhs.webp';
+import logoHelpHS from './assets/sistemas/helphs.webp';
+import logoTalentHS from './assets/sistemas/talenths.webp';
+import logoHSOS from './assets/sistemas/hsos.webp';
+import logoDocsHS from './assets/sistemas/docshs.webp';
 
 const systems: System[] = [
   {
@@ -9,77 +20,77 @@ const systems: System[] = [
     name: 'DataCoreHS',
     description: 'Sistema de análise de dados financeiro, onde contém todas as notas de vendas, notas de serviços, análise do estoque e clientes.',
     url: 'https://datacorehs.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoDataCoreHS,
   },
   {
     id: '2',
     name: 'ControlHS',
     description: 'Sistema de controle de patrimônio interno da empresa.',
     url: 'https://controlhs.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoControlHS,
   },
   {
     id: '3',
     name: 'HealthScore',
     description: 'Sistema utilizando IA para treinamento de vendedores utilizando objeções de clientes com base nos produtos da empresa.',
     url: 'https://healthscore.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoHealthScore,
   },
   {
     id: '4',
     name: 'ChamadosHS',
     description: 'Sistema de chamados para a equipe técnica da empresa ter controle dos chamados que os funcionários abrem.',
     url: 'https://chamadoshs.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoChamadosHS,
   },
   {
     id: '5',
     name: 'GrowthHS',
     description: 'Sistema de CRM para a equipe comercial da empresa ter controle de seus pipelines e suas vendas.',
     url: 'https://hsgrowth.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoGrowthHS,
   },
   {
     id: '6',
     name: 'GestorHS',
     description: 'Sistema de controle de calibração e manutenção dos equipamentos da empresa.',
     url: 'https://gestorhs.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoGestorHS,
   },
   {
     id: '7',
     name: 'TaskHS',
     description: 'Nosso quadro de tarefas (estilo Trello) onde todos os fluxos e processos da empresa são controlados.',
     url: 'https://taskhs.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoTaskHS,
   },
   {
     id: '8',
     name: 'HelpHS',
     description: 'Sistema de abertura e controle dos chamados do time de suporte com os clientes.',
     url: 'https://helphs.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoHelpHS,
   },
   {
     id: '9',
     name: 'TalentHS',
     description: 'Plataforma completa de RH com psicometria, IA e análise de equipe para potencializar o desenvolvimento de cada colaborador.',
     url: 'https://talenths.healthsafetytech.com',
-    icon: logoIcon,
+    icon: logoTalentHS,
   },
   {
     id: '10',
-    name: 'Em breve',
-    description: 'Novos sistemas estão sendo desenvolvidos para facilitar ainda mais o seu trabalho. Fique atento às novidades!',
-    url: '#',
-    icon: logoIcon,
+    name: 'HS.OS',
+    description: 'Plataforma de agentes de IA da empresa, onde a equipe conversa com os agentes e acompanha o que cada um está fazendo.',
+    url: 'https://hsos.healthsafetytech.com',
+    icon: logoHSOS,
   },
   {
     id: '11',
-    name: 'Em breve',
-    description: 'Novos sistemas estão sendo desenvolvidos para facilitar ainda mais o seu trabalho. Fique atento às novidades!',
-    url: '#',
-    icon: logoIcon,
+    name: 'DocsHS',
+    description: 'Sistema de gestão da qualidade (ISO 9001) com controle de documentos, revisões e não conformidades.',
+    url: 'https://docshs.healthsafetytech.com',
+    icon: logoDocsHS,
   },
   {
     id: '12',

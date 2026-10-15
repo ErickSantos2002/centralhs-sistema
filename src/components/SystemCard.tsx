@@ -31,34 +31,37 @@ export default function SystemCard({ system }: SystemCardProps) {
           : 'bg-white/80 hover:shadow-2xl hover:-translate-y-2 border-white/50'
       }`}>
 
-        {/* Icon Container */}
-        <div className="flex justify-center mb-2">
-          <div className="relative">
-            {/* Icon Background Glow */}
-            {!isComingSoon && (
-              <div className="absolute inset-0 bg-gradient-to-br from-blue-400 to-indigo-500 rounded-xl blur-md opacity-0 group-hover:opacity-70 transition-opacity duration-500"></div>
-            )}
+        {/* Logo do sistema (já traz o nome escrito) */}
+        {!isComingSoon && (
+          <div className="flex justify-center items-center h-12 mb-2">
+            <img
+              src={system.icon}
+              alt={system.name}
+              className="max-h-10 max-w-full object-contain drop-shadow-sm transition-transform duration-500 group-hover:scale-105"
+            />
+          </div>
+        )}
 
-            {/* Icon */}
-            <div className={`relative w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 rounded-xl transition-all duration-500 shadow-md ${
-              !isComingSoon ? 'group-hover:scale-110 group-hover:rotate-3' : ''
-            }`}>
+        {/* Placeholder "Em breve": ícone genérico */}
+        {isComingSoon && (
+          <div className="flex justify-center mb-2">
+            <div className="w-12 h-12 flex items-center justify-center bg-gradient-to-br from-blue-100 via-indigo-100 to-purple-100 rounded-xl shadow-md">
               <img
                 src={system.icon}
-                alt={`${system.name} logo`}
+                alt=""
                 className="w-8 h-8 object-contain filter drop-shadow-sm"
               />
             </div>
           </div>
-        </div>
+        )}
 
         {/* Content */}
         <div className="text-center flex-1 flex flex-col">
-          <h3 className={`text-base font-bold text-gray-800 mb-1.5 transition-all duration-300 ${
-            !isComingSoon ? 'group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-600 group-hover:to-indigo-600 group-hover:bg-clip-text' : ''
-          }`}>
-            {system.name}
-          </h3>
+          {isComingSoon && (
+            <h3 className="text-base font-bold text-gray-800 mb-1.5">
+              {system.name}
+            </h3>
+          )}
           <p className="text-xs text-gray-600 leading-relaxed flex-1">
             {system.description}
           </p>
