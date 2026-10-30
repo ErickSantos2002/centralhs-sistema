@@ -1,7 +1,6 @@
 import SystemCard from './components/SystemCard';
 import type { System } from './types/system';
 import logoFull from './assets/logo-full.png';
-import logoIcon from './assets/logo-icon.ico';
 import logoDataCoreHS from './assets/sistemas/datacorehs.webp';
 import logoControlHS from './assets/sistemas/controlhs.webp';
 import logoHealthScore from './assets/sistemas/healthscore.webp';
@@ -94,10 +93,10 @@ const systems: System[] = [
   },
   {
     id: '12',
-    name: 'Em breve',
-    description: 'Novos sistemas estão sendo desenvolvidos para facilitar ainda mais o seu trabalho. Fique atento às novidades!',
-    url: '#',
-    icon: logoIcon,
+    name: 'War Room',
+    description: 'War Room do HS.OS: painel de visualização para acompanhar em tempo real o que os agentes de IA estão fazendo.',
+    url: 'https://hsos.healthsafetytech.com/warroom?t=R5r-bL7uq9K-54NcisVWEh9yYUWC7DmkUy0zVYVEU_uovKi7',
+    icon: logoHSOS,
   },
 ];
 
