@@ -37,9 +37,10 @@ variável ou import sobrando quebra o `npm run build`.
 
 ### Adicionar ou trocar um sistema
 
-Editar o array `systems` em `App.tsx`. O normal é substituir um dos placeholders "Em breve" em
-vez de acrescentar item, porque a grade tem 4 colunas (`lg`) e a página é `h-screen` com
-`overflow-hidden`: linhas extras podem ser cortadas em vez de rolar.
+Editar o array `systems` em `App.tsx`. A grade é 1/2/3/4 colunas (base/`sm`/`md`/`lg`) e a
+página é `min-h-screen` com rolagem vertical: no desktop (~1366×768) as 3 linhas de 4 cabem sem
+rolar; em celular, tablet e TV (viewport pequeno) a página rola. Item a mais vira linha nova e
+passa a exigir rolagem também no desktop.
 
 O `icon` de cada sistema é o **logo com o nome escrito** (símbolo H&S + "NomeHS"), em
 `src/assets/sistemas/<sistema>.webp`, e o card mostra esse logo **no lugar** do título. Só o

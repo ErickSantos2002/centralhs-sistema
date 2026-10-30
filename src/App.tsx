@@ -102,9 +102,9 @@ const systems: System[] = [
 
 function App() {
   return (
-    <div className="h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 relative overflow-x-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
+      <div className="fixed inset-0 opacity-[0.03] pointer-events-none">
         <div className="absolute inset-0" style={{
           backgroundImage: `radial-gradient(circle at 2px 2px, rgb(59, 130, 246) 1px, transparent 0)`,
           backgroundSize: '40px 40px'
@@ -112,21 +112,21 @@ function App() {
       </div>
 
       {/* Gradient Orbs */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="fixed top-0 left-1/4 w-64 h-64 sm:w-96 sm:h-96 pointer-events-none bg-blue-400/20 rounded-full blur-3xl animate-pulse"></div>
+      <div className="fixed bottom-0 right-1/4 w-64 h-64 sm:w-96 sm:h-96 pointer-events-none bg-purple-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
 
-      <div className="relative flex flex-col h-screen">
+      <div className="relative flex flex-col min-h-screen">
         {/* Header */}
-        <header className="pt-4 pb-2 px-6 shrink-0">
+        <header className="pt-6 sm:pt-4 pb-2 px-4 sm:px-6 shrink-0">
           <div className="max-w-7xl mx-auto text-center">
             <div className="inline-block mb-1 animate-fade-in">
               <img
                 src={logoFull}
                 alt="H&S Logo"
-                className="max-w-[180px] h-auto mx-auto object-contain drop-shadow-lg animate-logo-pulse"
+                className="max-w-[140px] sm:max-w-[180px] h-auto mx-auto object-contain drop-shadow-lg animate-logo-pulse"
               />
             </div>
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-1 animate-fade-in-delay">
+            <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-1 animate-fade-in-delay">
               Central de Sistemas H&S
             </h1>
             <p className="text-sm text-gray-600 animate-fade-in-delay-2">
@@ -136,9 +136,9 @@ function App() {
         </header>
 
         {/* Main Content */}
-        <main className="flex-1 flex items-center justify-center px-6 py-2 min-h-0">
+        <main className="flex-1 flex items-center justify-center px-4 sm:px-6 py-4 lg:py-2">
           <div className="max-w-7xl w-full">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
               {systems.map((system, index) => (
                 <div
                   key={system.id}
@@ -153,7 +153,7 @@ function App() {
         </main>
 
         {/* Footer */}
-        <footer className="py-2 px-6 shrink-0">
+        <footer className="py-3 px-4 sm:px-6 shrink-0">
           <div className="max-w-7xl mx-auto">
             <div className="text-center">
               <div className="inline-block backdrop-blur-sm bg-white/40 rounded-full px-4 py-1.5 border border-white/50 shadow-sm">
