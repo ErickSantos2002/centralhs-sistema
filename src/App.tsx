@@ -11,6 +11,7 @@ import logoTaskHS from './assets/sistemas/taskhs.webp';
 import logoHelpHS from './assets/sistemas/helphs.webp';
 import logoTalentHS from './assets/sistemas/talenths.webp';
 import logoHSOS from './assets/sistemas/hsos.webp';
+import logoHSTV from './assets/sistemas/hstv.webp';
 import logoDocsHS from './assets/sistemas/docshs.webp';
 
 const systems: System[] = [
@@ -96,7 +97,7 @@ const systems: System[] = [
     name: 'War Room',
     description: 'War Room do HS.OS: painel de visualização para acompanhar em tempo real o que os agentes de IA estão fazendo.',
     url: 'https://hsos.healthsafetytech.com/warroom?t=R5r-bL7uq9K-54NcisVWEh9yYUWC7DmkUy0zVYVEU_uovKi7',
-    icon: logoHSOS,
+    icon: logoHSTV,
   },
 ];
 
